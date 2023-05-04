@@ -88,12 +88,6 @@
   },
   "settings": [
     {
-      "type": "inline_richtext",
-      "id": "title",
-      "default": "Featured collection",
-      "label": "t:sections.featured-collection.settings.title.label"
-    },
-    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -143,11 +137,6 @@
         }
       ],
       "default": "body"
-    },
-    {
-      "type": "collection",
-      "id": "collection",
-      "label": "t:sections.featured-collection.settings.collection.label"
     },
     {
       "type": "range",
@@ -340,14 +329,25 @@
       "name": "Tab Content",
       "settings": [
         {
-          "id": "linkurl",
-          "type": "url",
-          "label": "Url link"
+          "id": "tab_heading",
+          "type": "text",
+          "label": "Tab Heading"
         },
         {
           "id": "linktext",
           "type": "text",
           "label": "Link text"
+        },
+        {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Featured collection",
+      "label": "t:sections.featured-collection.settings.title.label"
+        },
+        {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
         }
       ]
     }
