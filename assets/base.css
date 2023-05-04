@@ -78,8 +78,10 @@
   --color-button-text: var(--color-base-outline-button-labels);
   --color-button: var(--color-background);
   --alpha-button-background: 1;
-    background-color: black;!important
-    color: white;!important
+}
+.button--secondary-1 {
+  background-color: black;
+  color: white;
 }
 
 .color-background-2 .button--secondary,
