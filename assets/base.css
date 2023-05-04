@@ -3158,7 +3158,7 @@ details-disclosure > details {
 ul.tabs {
   border-bottom: 1px solid #DDDDDD;
   display: block;
-  margin: 0 5rem 20px;
+  margin: 0 0 20px;
   padding: 0;
 
 }
@@ -3169,8 +3169,9 @@ ul.tabs li {
   margin-bottom: 0;
   padding: 0;
   width: auto;
-  justify-content: center;!important
-  align-items: center;!important
+  display: flex;
+  align-items: center;
+  
 }
 ul.tabs li a {
   -moz-border-bottom-colors: none;
