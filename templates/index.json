@@ -118,7 +118,7 @@
             "collection": "featured-collection"
           }
         },
-        "daf328ed-be41-4d3e-b473-7e03bf4fde5f": {
+        "83a5183a-46c1-428d-b219-022bea436fa7": {
           "type": "tab",
           "settings": {
             "tab_heading": "Popular",
@@ -126,7 +126,7 @@
             "collection": "featured-collection"
           }
         },
-        "f8ccf551-a6c0-47f1-8987-7cfae1d439be": {
+        "97dcf9e2-75e8-4052-b2a3-a6928ad6e868": {
           "type": "tab",
           "settings": {
             "tab_heading": "Offers",
@@ -137,8 +137,8 @@
       },
       "block_order": [
         "e54fd0b1-0de2-405f-9f1e-a30728ac4a41",
-        "daf328ed-be41-4d3e-b473-7e03bf4fde5f",
-        "f8ccf551-a6c0-47f1-8987-7cfae1d439be"
+        "83a5183a-46c1-428d-b219-022bea436fa7",
+        "97dcf9e2-75e8-4052-b2a3-a6928ad6e868"
       ],
       "settings": {
         "heading_size": "h1",
