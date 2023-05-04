@@ -3149,7 +3149,9 @@ details-disclosure > details {
 .multicolumn-card.swipe_image_right{
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 .multicolumn-card.swipe_image_right > div{width: 42%;}
   
