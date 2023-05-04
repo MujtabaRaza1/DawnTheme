@@ -47,7 +47,7 @@
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       
       <div>
-        <ul class="tab">
+        <ul class="tabs">
           {% for block in section.blocks %}
           <li><a href="#tab-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
             {% endfor %}
