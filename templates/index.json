@@ -123,7 +123,7 @@
           "settings": {
             "tab_heading": "Popular",
             "title": "Popular",
-            "collection": "featured-collection"
+            "collection": "featured-collection-2"
           }
         },
         "97dcf9e2-75e8-4052-b2a3-a6928ad6e868": {
@@ -131,7 +131,7 @@
           "settings": {
             "tab_heading": "Offers",
             "title": "Offers",
-            "collection": "featured-collection"
+            "collection": "featured-collection-3"
           }
         }
       },
