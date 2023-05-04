@@ -59,7 +59,6 @@
                 <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ block.settings.title }}</h2>
               {%- endif -%}
             </div>
-        </div>
           <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
@@ -119,6 +118,8 @@
         </div>
       {%- endif -%}
     </slider-component>
+        </div>
+          
       </div>
           {% endfor %}
     </div>
