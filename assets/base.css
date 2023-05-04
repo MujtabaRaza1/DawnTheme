@@ -3190,7 +3190,7 @@ ul.tabs li a {
   color: #303030;
   border-bottom:none !important;
 }
-ul.tabs li a.active {
+ul.tabs li a:active {
   background: none repeat scroll 0 0 #FFFFFF;
   border-left-width: 1px;
   border-top-left-radius: 2px;
@@ -3202,7 +3202,7 @@ ul.tabs li a.active {
   position: relative;
   top: -4px;
 }
-ul.tabs li:first-child a.active {
+ul.tabs li:first-child a:active {
   margin-left: 0;
 }
 ul.tabs li:first-child a {
