@@ -3160,8 +3160,7 @@ ul.tabs {
   display: block;
   margin: 0 0 20px;
   padding: 0;
-  justify-content: center;!important
-  align-items: center;!important
+
 }
 ul.tabs li {
   display: block;
@@ -3170,6 +3169,8 @@ ul.tabs li {
   margin-bottom: 0;
   padding: 0;
   width: auto;
+  justify-content: center;!important
+  align-items: center;!important
 }
 ul.tabs li a {
   -moz-border-bottom-colors: none;
