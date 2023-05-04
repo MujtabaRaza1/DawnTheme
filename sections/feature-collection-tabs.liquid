@@ -48,7 +48,7 @@
       
       <div>
         <ul class="tabs">
-          {% for block in section.blocks %}
+          {% for block in block.blocks %}
           <li><a href="#tab={{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
             {% endfor %}
         </ul>
