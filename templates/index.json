@@ -162,11 +162,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Let’s Covered with Yellow<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-0",
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-1",
+        "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BG_Shape_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "right",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "image_banner",
     "ed4af4b6-6f5c-4955-83f5-b24956f86a41",
-    "7cdd02ae-61c9-419d-b5f5-ef58717efac1"
+    "7cdd02ae-61c9-419d-b5f5-ef58717efac1",
+    "66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d"
   ]
 }
