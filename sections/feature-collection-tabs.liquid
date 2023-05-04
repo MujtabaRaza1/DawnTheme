@@ -53,7 +53,7 @@
             {% endfor %}
         </ul>
         {% for block in section.blocks %}
-        <div id="tab={{ forloop.index }}">
+        <div id="tab-{{ forloop.index }}">
            <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
             {%- if section.settings.title != blank -%}
               <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ block.settings.title }}</h2>
