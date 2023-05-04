@@ -3157,8 +3157,7 @@ details-disclosure > details {
 
 ul.tabs {
   border-bottom: 1px solid #DDDDDD;
-  display:flex;
-  align-items: center;
+  display: block;
   margin: 0 0 20px;
   padding: 0;
 
