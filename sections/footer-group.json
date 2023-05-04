@@ -24,10 +24,13 @@
         "8545955a-2af9-4d08-a31c-cd3c6c7a85e3",
         "bb9d52eb-a82a-4e9d-ac18-53fdd652986b"
       ],
+      "custom_css": [
+        ".footer-block {row-gap: 1% !important; justify-content: center !important; text-align: center; display: flex; width: 100%; align-content: center;}"
+      ],
       "settings": {
         "color_scheme": "background-1",
-        "newsletter_enable": false,
-        "newsletter_heading": "<strong>Join our Newsletter<\/strong>",
+        "newsletter_enable": true,
+        "newsletter_heading": "",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": true,
