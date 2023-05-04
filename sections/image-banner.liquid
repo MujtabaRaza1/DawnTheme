@@ -147,7 +147,9 @@
                 </a>
               {%- endif -%}
             </div>
-          <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+
+
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -463,7 +465,7 @@
     {
       "type": "buttons",
       "name": "t:sections.image-banner.blocks.buttons.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",
