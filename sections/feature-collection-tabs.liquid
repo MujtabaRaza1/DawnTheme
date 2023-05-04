@@ -69,7 +69,7 @@
       >
         {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
           <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            id="Slide-{{ block.id }}-{{ forloop.index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}"
           >
             {% render 'card-product',
