@@ -48,9 +48,9 @@
     
 <div>
   <ul class="tabs">
-    <li><a href="#tab-1">Info</a></li>
-    <li><a href="#tab-2">Shipping</a></li>
-    <li><a href="#tab-3">Returns</a></li>
+    {% for block in section.blocks %}
+    <li><a href="#tab={{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
+      {% endfor %}
   </ul>
   <div id="tab-1">
      This is Description
