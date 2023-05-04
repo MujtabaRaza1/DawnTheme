@@ -17,7 +17,7 @@
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
-   <div class="newsletter_main">
+   
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -27,6 +27,7 @@
             {{ block.settings.heading }}
           </h2>
         {%- when 'paragraph' -%}
+        <div class="newsletter_main">
           <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
@@ -75,6 +76,7 @@
                   </small>
                 {%- endif -%}
               </div>
+          </div>
               {%- if form.posted_successfully? -%}
                 <h3
                   class="newsletter-form__message newsletter-form__message--success form__message"
@@ -90,7 +92,6 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
-   </div>
   </div>
 </div>
 
