@@ -45,24 +45,23 @@
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.title }}</h2>
-      {%- endif -%}
-      {%- if section.settings.description != blank
-        or section.settings.show_description
-        and section.settings.collection.description != empty
-      -%}
-        <div class="collection__description {{ section.settings.description_style }} rte">
-          {%- if section.settings.show_description -%}
-            {{ section.settings.collection.description }}
-          {%- else -%}
-            {{ section.settings.description -}}
-          {%- endif %}
-        </div>
-      {%- endif -%}
-    </div>
-
+    
+<div>
+  <ul class="tabs">
+    <li><a href="#tab-1">Info</a></li>
+    <li><a href="#tab-2">Shipping</a></li>
+    <li><a href="#tab-3">Returns</a></li>
+  </ul>
+  <div id="tab-1">
+  {{ product.description }}
+  </div>
+  <div id="tab-2">
+  {% render 'shipping' %}
+  </div>
+  <div id="tab-3">
+  {{ pages.returns.content }}
+  </div>
+</div>
     
 
     {%- if section.settings.show_view_all and more_in_collection -%}
@@ -81,7 +80,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.featured-collection.name",
+  "name": "Feature Collection Tabs",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -337,7 +336,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.name"
+      "name": "Feature Collection Tabs"
     }
   ]
 }
