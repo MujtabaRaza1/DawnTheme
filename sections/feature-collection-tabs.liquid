@@ -67,7 +67,7 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
+        {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
           <li
             id="Slide-{{ block.id }}-{{ forloop.index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}"
@@ -85,7 +85,7 @@
         {%- else -%}
           {%- for i in (1..4) -%}
             <li class="grid__item">
-              {% render 'card-product', show_vendor: block.settings.show_vendor %}
+              {% render 'card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
         {%- endfor -%}
