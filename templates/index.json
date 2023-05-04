@@ -110,7 +110,7 @@
     "7cdd02ae-61c9-419d-b5f5-ef58717efac1": {
       "type": "feature-collection-tabs",
       "blocks": {
-        "af73aef4-414b-404b-a69a-7126514f9de6": {
+        "e54fd0b1-0de2-405f-9f1e-a30728ac4a41": {
           "type": "tab",
           "settings": {
             "tab_heading": "New In",
@@ -118,7 +118,7 @@
             "collection": "featured-collection"
           }
         },
-        "d058b532-ac7f-4310-a604-0cd55f5fa2a9": {
+        "daf328ed-be41-4d3e-b473-7e03bf4fde5f": {
           "type": "tab",
           "settings": {
             "tab_heading": "Popular",
@@ -126,19 +126,19 @@
             "collection": "featured-collection"
           }
         },
-        "21eab680-cfce-422a-8283-d1a833db050b": {
+        "f8ccf551-a6c0-47f1-8987-7cfae1d439be": {
           "type": "tab",
           "settings": {
             "tab_heading": "Offers",
-            "title": "offers",
+            "title": "Offers",
             "collection": "featured-collection"
           }
         }
       },
       "block_order": [
-        "af73aef4-414b-404b-a69a-7126514f9de6",
-        "d058b532-ac7f-4310-a604-0cd55f5fa2a9",
-        "21eab680-cfce-422a-8283-d1a833db050b"
+        "e54fd0b1-0de2-405f-9f1e-a30728ac4a41",
+        "daf328ed-be41-4d3e-b473-7e03bf4fde5f",
+        "f8ccf551-a6c0-47f1-8987-7cfae1d439be"
       ],
       "settings": {
         "heading_size": "h1",
