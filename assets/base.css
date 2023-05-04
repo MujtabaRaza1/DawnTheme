@@ -78,6 +78,8 @@
   --color-button-text: var(--color-base-outline-button-labels);
   --color-button: var(--color-background);
   --alpha-button-background: 1;
+    background-color: black;
+    color: white;
 }
 
 .color-background-2 .button--secondary,
@@ -3225,8 +3227,4 @@ ul.tabs:before, ul.tabs:after {
 }
 ul.tabs:after {
   clear: both;
-}
-.tabs{
-  display: flex; !important
-  align-items: center; !important
 }
