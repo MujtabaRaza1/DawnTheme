@@ -3227,6 +3227,6 @@ ul.tabs:after {
   clear: both;
 }
 .newsletter_main1{
-    max-width: 765px;
-    margin: 0 auto 2.5rem;
+    max-width: 765px !important;
+    margin: 0 auto 2.5rem !important;
   }
