@@ -3146,4 +3146,10 @@ details-disclosure > details {
     0% { transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2); }
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
+.multicolumn-card.swipe_image_right{
+  display: flex;
+  flex-wrap: wrap;
 }
+.multicolumn-card.swipe_image_right > div{width: 42%;}
+  
+
