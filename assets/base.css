@@ -3155,7 +3155,7 @@ details-disclosure > details {
 }
 .multicolumn-card.swipe_img_right > div{width: 40%;}
 
-  ul.tabs {
+ul.tabs {
   border-bottom: 1px solid #DDDDDD;
   display: block;
   margin: 0 0 20px;
