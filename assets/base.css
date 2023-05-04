@@ -3146,13 +3146,13 @@ details-disclosure > details {
     0% { transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2); }
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
-.multicolumn-card.swipe_image_right{
+.multicolumn-card.swipe_img_right{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
-.multicolumn-card.swipe_image_right > div{width: 42%;}
+.multicolumn-card.swipe_img_right > div{width: 42%;}
   
 
