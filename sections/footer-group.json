@@ -4,14 +4,34 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "8545955a-2af9-4d08-a31c-cd3c6c7a85e3": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Join our Newsletter<\/strong>",
+            "subtext": ""
+          }
+        },
+        "bb9d52eb-a82a-4e9d-ac18-53fdd652986b": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>Get 15% off your first purchase!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8545955a-2af9-4d08-a31c-cd3c6c7a85e3",
+        "bb9d52eb-a82a-4e9d-ac18-53fdd652986b"
+      ],
       "settings": {
         "color_scheme": "background-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "<strong>Join our Newsletter<\/strong>",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 36,
