@@ -107,8 +107,8 @@
         "block_bg_hover": "#21c779"
       }
     },
-    "33fdd159-4dd2-4e28-955f-c529edf43404": {
-      "type": "featured-collection",
+    "7cdd02ae-61c9-419d-b5f5-ef58717efac1": {
+      "type": "feature-collection-tabs",
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -138,6 +138,6 @@
   "order": [
     "image_banner",
     "ed4af4b6-6f5c-4955-83f5-b24956f86a41",
-    "33fdd159-4dd2-4e28-955f-c529edf43404"
+    "7cdd02ae-61c9-419d-b5f5-ef58717efac1"
   ]
 }
