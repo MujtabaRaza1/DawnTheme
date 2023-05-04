@@ -25,7 +25,7 @@
         "bb9d52eb-a82a-4e9d-ac18-53fdd652986b"
       ],
       "custom_css": [
-        ".footer-block {justify-content: center !important; text-align: center; display: flex; row-gap: 1px !important; width: 100%; align-content: center;}"
+        ".footer-block {justify-content: center !important; width: 100%; text-align: center; display: flex; flex: auto; align-content: center;}"
       ],
       "settings": {
         "color_scheme": "background-1",
