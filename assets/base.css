@@ -3226,3 +3226,7 @@ ul.tabs:before, ul.tabs:after {
 ul.tabs:after {
   clear: both;
 }
+.tabs{
+  display: flex; !important
+  align-items: center; !important
+}
