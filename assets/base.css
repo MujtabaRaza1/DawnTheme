@@ -3221,5 +3221,5 @@ ul.tabs:before, ul.tabs:after {
   width: 0;
 }
 ul.tabs:after {
-  clear: both;!important
+  clear: both;
 }
