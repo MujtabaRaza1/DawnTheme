@@ -34,6 +34,9 @@
         "heading",
         "button"
       ],
+      "custom_css": [
+        ".button{background-color: black; color:white;}"
+      ],
       "settings": {
         "image_2": "shopify:\/\/shop_images\/New_Project_4.png",
         "image_overlay_opacity": 40,
@@ -198,7 +201,7 @@
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-2"
       ],
       "custom_css": [
-        ".button{background-color: black; color: white;}"
+        ".button {background-color: black; color: white;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BG_Shape_3.jpg",
