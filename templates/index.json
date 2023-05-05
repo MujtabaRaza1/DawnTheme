@@ -197,6 +197,9 @@
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-1",
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-2"
       ],
+      "custom_css": [
+        ".button{background-color: black; color: white;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BG_Shape_3.jpg",
         "image_overlay_opacity": 0,
