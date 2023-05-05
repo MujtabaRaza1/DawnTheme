@@ -25,7 +25,7 @@
         "bb9d52eb-a82a-4e9d-ac18-53fdd652986b"
       ],
       "custom_css": [
-        ".footer-block {justify-content: center !important; width: 100%; height: 0.1vh; text-align: center; display: flex; flex: auto; align-content: center; background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0750\/2944\/6940\/t\/3\/assets\/Image.jpg?v=1683245815\");}"
+        ".footer-block {justify-content: center !important; width: 100%; height: 0.1vh; text-align: center; display: flex; flex: auto; align-content: center;}"
       ],
       "settings": {
         "color_scheme": "background-1",
