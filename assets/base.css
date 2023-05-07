@@ -3256,11 +3256,3 @@ align-items: center;
 border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
 background: none;
 }
-.swatch__list_pr {
-display: flex;
-    align-items: center;
-}
-.variations.style__circle .swatch.is-label .swatch_pr_item 
-{
-flex: 1;
-}
