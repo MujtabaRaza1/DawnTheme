@@ -45,9 +45,9 @@
     endfor
   -%}
 
-  {%- if block.settings.picker_type == 'option' -%}
+  {%- if block.settings.picker_type == 'button' -%}
     <input
-      type="radio"
+      type="input"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
       value="{{ value | escape }}"
