@@ -447,7 +447,9 @@
       </div>
     {%- endif -%}
   </div>
-
+    {% if product.available and product.variants.size > 1 %}
+     {% include 'swatch' with 'Color' %}
+    {% endif %}
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
