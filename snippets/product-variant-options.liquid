@@ -70,11 +70,13 @@
             </label>
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
-   {% if option.name == Color %}
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
+    {% if option.name == "Color" %}
+            {% if product.available and product.variants.size > 1 %}
+                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
               <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
             </label>
-    {% else %}
+            {% endif %}}
+          {% else %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
@@ -87,6 +89,6 @@
         {{- value -}}
       {%- endif %}
     </option>
-    {% endif %}
+      {% endif %}}
   {%- endif -%}
 {%- endfor -%}
