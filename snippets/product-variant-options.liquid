@@ -70,6 +70,7 @@
             </label>
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
+    {% render 'swatch' with 'Color' as swatch %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
