@@ -70,6 +70,9 @@
             </label>
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
+    {% if product.available and product.variants.size > 1 %}
+      {% render 'swatch' with 'Color' as swatch %}
+    {% endif %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
@@ -82,9 +85,6 @@
         {{- value -}}
       {%- endif %}
     </option>
-    &nbsp
-    {% if product.available and product.variants.size > 1 %}
-      {% render 'swatch' with 'Color' as swatch %}
-    {% endif %}
+    
   {%- endif -%}
 {%- endfor -%}

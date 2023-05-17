@@ -32,9 +32,6 @@
       </script>
     </variant-radios>
   {%- else -%}
-    {% if option.name == "Color" %}
-            {% render 'swatch' for product.values as swatch %}
-      {% else  %}
     <variant-selects
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
@@ -68,7 +65,6 @@
         {{ product.variants | json }}
       </script>
     </variant-selects>
-      {% endif %}
   {%- endif -%}
 {%- endunless -%}
 
