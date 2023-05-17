@@ -46,6 +46,10 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
+    {% if option.name == "Color" and product.variants.size > 1 %}
+      {% render 'swatch' with 'Color' as swatch %}
+    {% endif %}
+    &nbsp
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
