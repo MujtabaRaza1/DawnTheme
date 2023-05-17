@@ -82,5 +82,9 @@
         {{- value -}}
       {%- endif %}
     </option>
+    &nbsp
+    {% if product.available and product.variants.size > 1 %}
+      {% render 'swatch' with 'Color' as swatch %}
+    {% endif %}
   {%- endif -%}
 {%- endfor -%}
