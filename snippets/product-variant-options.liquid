@@ -48,7 +48,7 @@
   {%- if block.settings.picker_type == 'button' -%}
     {% if option.name == "Color" %}
       {% render 'swatch' with 'Color' as swatch %}
-    {% else %}
+    {% endif %}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -62,7 +62,6 @@
         class="disabled"
       {% endif %}
     >
-      {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     
     <option
