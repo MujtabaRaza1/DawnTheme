@@ -46,9 +46,6 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    {% if option.name == "Color" %}
-      {% render 'swatch' with 'Color' as swatch %}
-    {% endif %}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -62,8 +59,20 @@
         class="disabled"
       {% endif %}
     >
+    {% if product.variants[forloop.index0].metafields.color.value and option.name == "Color" %}
+            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+      {% else %}
+            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"}}">
+              {{ value -}}
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+    {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
-    
+    {% if option.name == "Color" %}
+      {% render 'swatch' with 'Color' as swatch %}
+    {% endif %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
