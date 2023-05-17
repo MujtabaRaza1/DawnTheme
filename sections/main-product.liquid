@@ -309,6 +309,7 @@
 
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
@@ -447,7 +448,7 @@
       </div>
     {%- endif -%}
   </div>
-    
+
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -567,8 +568,8 @@
       ]
     }
   </script>
-                          <Style>
-                            /* 
+  <Style>
+  /* 
    Swatches Styles
 */
 
@@ -728,7 +729,7 @@
 .swatch.error code {
   font-family:monospace;
 }
-                          </Style>
+  </Style>
 </section>
 
 {% schema %}
@@ -875,7 +876,7 @@
               "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
             },
             {
-              "value": "Custom",
+              "value": "custom",
               "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__3.label"
             }
           ],
