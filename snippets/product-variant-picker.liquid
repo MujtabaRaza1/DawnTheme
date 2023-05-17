@@ -33,7 +33,7 @@
     </variant-radios>
   {%- else -%}
     {% if option.name == "Color" %}
-            {% render 'swatch' for product.options as swatch %}
+            {% render 'swatch' for product.values as swatch %}
       {% else  %}
     <variant-selects
       id="variant-selects-{{ section.id }}"
