@@ -46,10 +46,9 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    {% if product.available and product.variants.size > 1 %}
+    {% if option.name == "Color" %}
       {% render 'swatch' with 'Color' as swatch %}
-    {% endif %}
-    &nbsp
+    {% else %}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -73,6 +72,7 @@
               <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
             </label>
     {% endif %}
+      {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     
     <option
