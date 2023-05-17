@@ -47,9 +47,7 @@
 
   {%- if block.settings.picker_type == 'button' -%}
     {% if product.available and product.variants.size > 1 %}
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
-              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-            </label>
+      {% render 'swatch' with 'Color' as swatch %}
     {% endif %}
     &nbsp
     <input
