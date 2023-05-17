@@ -32,6 +32,11 @@
       </script>
     </variant-radios>
   {%- else -%}
+    {% if option.name == "Color" %}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+      {% else  %}
     <variant-selects
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
@@ -65,6 +70,7 @@
         {{ product.variants | json }}
       </script>
     </variant-selects>
+      {% endif %}
   {%- endif -%}
 {%- endunless -%}
 
