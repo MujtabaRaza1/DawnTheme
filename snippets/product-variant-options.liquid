@@ -70,10 +70,14 @@
             </label>
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
+      
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
         selected="selected"
+      {% endif %}
+      {% if product.available and product.variants.size > 1 %}
+          {% render 'swatch' with 'Color' as swatch %}
       {% endif %}
     >
       {% if option_disabled -%}
