@@ -21,9 +21,13 @@
     {% assign found_option = true %}
     {% assign option_index = forloop.index0 %}
     <style>
+<<<<<<< HEAD
       label[for="product-select-option-{{ option_index }}"] { display: none; }
       #product-select-option-{{ option_index }} { display: none; }
       #product-select-option-{{ option_index }} + .custom-style-select-box { display: none !important; }
+=======
+      background-color: {{ product.variants[forloop.index0].metafields.color.value }}
+>>>>>>> fa66f10b890a6027a7836ba73bd91aa1e1d0531d
     </style>
     <script>$(window).load(function() { $('.selector-wrapper:eq({{ option_index }})').hide(); });</script>
     {% assign downcased_option = swatch | downcase %}

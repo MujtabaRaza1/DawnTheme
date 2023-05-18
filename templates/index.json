@@ -21,10 +21,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_link_1": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary_1": false,
             "button_label_2": "Shop Now",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/products\/classic-varsity-top",
             "button_style_secondary_2": false
           }
         }
@@ -33,6 +33,9 @@
         "cf7fc159-70b2-4ca6-867f-0876d2d070e1",
         "heading",
         "button"
+      ],
+      "custom_css": [
+        ".button {background-color: black; color: white; cursor: pointer;}"
       ],
       "settings": {
         "image_2": "shopify:\/\/shop_images\/New_Project_4.png",
@@ -88,7 +91,7 @@
         "template--18774622896412__ed4af4b6-6f5c-4955-83f5-b24956f86a41-16831650906eac7ca8-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "<strong>Trending<\/strong>",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -176,7 +179,7 @@
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "<strong>50% off for 1st Ten Customers<\/strong>",
             "text_style": "body"
           }
         },
@@ -196,6 +199,9 @@
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-0",
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-1",
         "template--18774622896412__66ed4444-0cb2-4cf9-b306-4d8ef4a71e2d-1683225381903f9874-2"
+      ],
+      "custom_css": [
+        ".button {background-color: black; color: white;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BG_Shape_3.jpg",
