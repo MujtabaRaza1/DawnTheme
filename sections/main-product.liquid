@@ -132,12 +132,13 @@
                             <input required class="required" type="radio" name="attributes[Color]" value="Red"{% if cart.attributes["Color"] == "Red" %} checked{% endif %}> <span>Red</span><br>
                           </p>
 
-                        {% endif %}
+                        {% else %}
 
 
                   
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
+                    {% endif %}
                 {%- endform -%}
               </div>
             {%- when 'inventory' -%}
