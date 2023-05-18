@@ -3170,6 +3170,7 @@ ul.tabs li {
   display: inline-block;
   position: relative;
   white-space: nowrap;
+  background-color: aquamarine;
 }
 .tabss{
   position: relative;
@@ -3197,6 +3198,7 @@ ul.tabs li a {
   width: auto;
   color: #303030;
   border-bottom:none !important;
+  border-top: none;
 }
 ul.tabs li a.active {
   background: none repeat scroll 0 0 #FFFFFF;
