@@ -44,8 +44,8 @@
       endcase
     endfor
   -%}
-
-  {%- if block.settings.picker_type == 'button' -%}
+    {%- if block.settings.picker_type == 'button' -%}
+    
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -58,12 +58,23 @@
       {% if option_disabled %}
         class="disabled"
       {% endif %}
-    >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+    > 
+    {% if product.variants[forloop.index0].metafields.color.value and option.name == "Color" %}
+            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+      {% else %}
+            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+              {{ value -}}
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+    {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
+    {% if option.name == "Color" %}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
+              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+            </label>
+    {% else %}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
@@ -76,5 +87,53 @@
         {{- value -}}
       {%- endif %}
     </option>
+    {% endif %}
   {%- endif -%}
 {%- endfor -%}
+
+
+<Style>
+.select-customP{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  font-size: 1.6rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow var(--duration-short) ease;
+  border-radius: var(--inputs-radius);
+  height: 4.5rem;
+  min-height: calc(var(--inputs-border-width) * 2);
+  min-width: calc(7rem + (var(--inputs-border-width) * 2));
+  position: relative;
+  border: none;
+  padding: 0 1rem}
+.select-customP:before{
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--inputs-radius-outset);
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
+  z-index: -1;
+}
+.select-customP:after{
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: var(--inputs-border-width);
+  right: var(--inputs-border-width);
+  bottom: var(--inputs-border-width);
+  left: var(--inputs-border-width);
+  border: 0.1rem solid transparent;
+  border-radius: var(--inputs-radius);
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
+  transition: box-shadow var(--duration-short) ease;
+  z-index: 1;
+  transition: box-shadow var(--duration-short) ease;
+}
+</Style>

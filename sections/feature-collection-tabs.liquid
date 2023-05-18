@@ -47,11 +47,13 @@
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       
       <div>
-        <ul class="tabs">
-          {% for block in section.blocks %}
-          <li><a href="#tab-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
-            {% endfor %}
-        </ul>
+          <div class="tabss">
+            <ul class="tabs">
+              {% for block in section.blocks %}
+              <li><a href="#tab-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
+                {% endfor %}
+            </ul>
+          </div>
         {% for block in section.blocks %}
         <div id="tab-{{ forloop.index }}">
            <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">

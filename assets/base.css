@@ -3160,18 +3160,24 @@ ul.tabs {
   display: block;
   margin: 0 0 20px;
   padding: 0;
-
 }
 ul.tabs li {
   display: block;
-  float: left;
   height: 30px;
   margin-bottom: 0;
   padding: 0;
   width: auto;
-
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+.tabss{
+  position: relative;
+  width: 100%;
+  text-align-last: center;
   
 }
+
 ul.tabs li a {
   -moz-border-bottom-colors: none;
   -moz-border-image: none;
