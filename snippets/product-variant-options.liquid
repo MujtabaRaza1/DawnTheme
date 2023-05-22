@@ -70,15 +70,6 @@
             </label>
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
-<<<<<<< HEAD
-    {% if option.name == "Color" %}
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.color.value }}">
-              <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-            </label>
-    {% else %}
-=======
-      
->>>>>>> fa66f10b890a6027a7836ba73bd91aa1e1d0531d
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}
@@ -91,7 +82,6 @@
         {{- value -}}
       {%- endif %}
     </option>
-    {% endif %}
   {%- endif -%}
 {%- endfor -%}
 
