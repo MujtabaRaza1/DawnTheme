@@ -115,7 +115,6 @@
                         assign variants_option1_arr = product.variants | map: 'option1'
                         assign variants_option2_arr = product.variants | map: 'option2'
                         assign variants_option3_arr = product.variants | map: 'option3'
-
                         assign product_form_id = 'product-form-' | append: section.id
                     -%}
                         {% if product.template_suffix == 'custom' %}
@@ -123,7 +122,6 @@
                             {%- for option in product.options_with_values -%}
                               {%- liquid
                                   assign option_disabled = true
-
                                   for option1_name in variants_option1_arr
                                     case option.position
                                       when 1
@@ -248,6 +246,7 @@
 
 
 
+                  
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                   {% endif %}
