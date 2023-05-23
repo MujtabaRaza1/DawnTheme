@@ -10,6 +10,9 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
+ {% if product.template_suffix == 'custom' %}
+  <br>
+ {% else %}
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
@@ -66,6 +69,7 @@
       </script>
     </variant-selects>
   {%- endif -%}
+  {% endif %}
 {%- endunless -%}
 
 <noscript class="product-form__noscript-wrapper-{{ section.id }}">
